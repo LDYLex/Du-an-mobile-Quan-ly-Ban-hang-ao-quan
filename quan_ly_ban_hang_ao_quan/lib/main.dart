@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quan_ly_ban_hang_ao_quan/Views/screens/HomeView.dart';
-import 'package:quan_ly_ban_hang_ao_quan/tango.dart';
 
 void main() {
   runApp(const MyApp());
