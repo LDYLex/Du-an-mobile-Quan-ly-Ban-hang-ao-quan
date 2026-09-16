@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quan_ly_ban_hang_ao_quan/Views/screens/HomeView.dart';
 import 'package:quan_ly_ban_hang_ao_quan/tango.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Tango(),
+      home: const Homeview(),
       debugShowCheckedModeBanner: false,
     );
   }
