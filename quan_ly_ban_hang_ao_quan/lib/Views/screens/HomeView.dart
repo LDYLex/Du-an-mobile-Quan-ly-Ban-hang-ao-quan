@@ -32,10 +32,71 @@ class Homeview extends StatelessWidget {
                     ),
                   ),
                 ),
+                IconButton(onPressed: () {}, icon: Icon(Icons.abc)),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Column(children: [Image.asset(""), Text("Ao phong")]),
+                ),
+                Expanded(
+                  child: Column(children: [Image.asset(""), Text("Ao phong")]),
+                ),
+                Expanded(
+                  child: Column(children: [Image.asset(""), Text("Ao am")]),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [Image.asset(""), Text("Ao tay dai")],
+                  ),
+                ),
+                Expanded(
+                  child: Column(children: [Image.asset(""), Text("quan tay")]),
+                ),
+                Expanded(
+                  child: Column(children: [Image.asset(""), Text("quan bo")]),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Row(
+                    children: [
+                      Text(
+                        "Danh cho ban",
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      ),
+                      const SizedBox(width: 10),
+                      Text(
+                        "Gan ban",
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      ),
+                      const SizedBox(width: 10),
+                      Text(
+                        "Moi nhat",
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      ),
+                      const SizedBox(width: 10),
+                      Text(
+                        "video",
+                        style: TextStyle(color: Colors.black, fontSize: 15),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: Row(
+        children: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.home)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.chat)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.person)),
+        ],
       ),
     );
   }
