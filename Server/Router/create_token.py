@@ -17,11 +17,11 @@ def create_token(user_id:str, role:str,db:Session):
     return jwt.encode( 
          paload,
         kieu, 
-        algorithm=int(key)
+        algorithm=key
     )
 def token_decode(token:str): 
     return jwt.decode( 
          token, 
          kieu, 
-        algorithms=int(key)
+        algorithms=key
     )
